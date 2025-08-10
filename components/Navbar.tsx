@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { auth } from "@/auth";
-import { loginWithGithub, logout } from "../actions/auth";
+import { loginWithGithub, logout } from "../app/actions/auth";
 
 async function Navbar() {
     const session = await auth()
